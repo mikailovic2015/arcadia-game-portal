@@ -90,3 +90,26 @@ html[data-theme="light"] .modal .play-stage h3{color:#f5f5ff}
 html[data-theme="light"] .modal .play-stage p{color:#aeb7d0}
 html[data-theme="light"] .profile-edit input{color:#252b3d;background:#ffffff;border-color:#7b88a52e}
 html[data-theme="light"] .profile-edit input::placeholder{color:#8a93aa}
+
+/* Neon Snake: smoother, responsive arcade presentation */
+.snake-headline{width:min(100%,420px);display:flex;align-items:center;justify-content:space-between;gap:14px;text-align:left;margin:0 auto 13px}
+.snake-headline h3{margin:3px 0 4px;color:#f4fff9;font-size:19px;letter-spacing:-.45px}
+.snake-headline p{margin:0;color:#aab8ca;font-size:10px;line-height:1.5}
+.snake-eyebrow{color:#7de9c5;font-size:7px;font-weight:800;letter-spacing:1.5px}
+.snake-score-card{display:grid;gap:3px;min-width:75px;text-align:right}
+.snake-score-card small{color:#8fa5b2;font-size:7px;letter-spacing:1px}
+.snake-score-card b{color:#e5fff3;font-size:28px;line-height:1;font-variant-numeric:tabular-nums}
+.snake-arena{position:relative;width:min(100%,420px);margin:auto;padding:8px;overflow:hidden;border:1px solid #73edc533;border-radius:22px;background:linear-gradient(145deg,#ffffff10,#ffffff03 55%,#69f0c008);box-shadow:0 16px 42px #02081040,inset 0 1px #ffffff12}
+.snake-canvas{display:block;width:100%;height:auto;aspect-ratio:1;border:1px solid #8cefd328;border-radius:15px;box-shadow:0 0 32px #43d99a15;image-rendering:auto;touch-action:none}
+.snake-level-pill{position:absolute;top:16px;left:16px;display:flex;align-items:center;gap:6px;padding:6px 9px;border:1px solid #b4ffe326;border-radius:99px;background:#07131dcc;color:#c2f5e2;font-size:7px;font-weight:700;letter-spacing:.8px;backdrop-filter:blur(12px)}
+.snake-level-pill i{width:6px;height:6px;border-radius:50%;background:#75f3bf;box-shadow:0 0 10px #75f3bf;animation:snake-beacon 1.8s ease-in-out infinite}
+.snake-footer{width:min(100%,420px);min-height:48px;display:flex;align-items:center;justify-content:space-between;gap:10px;margin:10px auto 0}
+.snake-footer>span{color:#aab8ca;font-size:9px;line-height:1.4}
+.snake-controls{display:grid;grid-template-columns:repeat(3,34px);grid-template-rows:repeat(2,30px);gap:4px;margin:0;flex:none}
+.snake-controls>button{width:34px;height:30px;padding:0;border:1px solid #a6f8dc25;border-radius:9px;background:linear-gradient(145deg,#ffffff18,#ffffff08);color:#d7ffed;font-size:14px;box-shadow:inset 0 1px #ffffff10;transition:transform .15s,border-color .15s,background .15s}
+.snake-controls>button:hover{transform:translateY(-1px);border-color:#83f4cb77;background:#56dba52a}
+.snake-controls>button:active{transform:scale(.92);background:#56dba544}
+.snake-controls [data-dir="up"]{grid-column:2;grid-row:1}.snake-controls [data-dir="left"]{grid-column:1;grid-row:2}.snake-controls [data-dir="down"]{grid-column:2;grid-row:2}.snake-controls [data-dir="right"]{grid-column:3;grid-row:2}
+@keyframes snake-beacon{50%{opacity:.48;box-shadow:0 0 3px #75f3bf}}
+@media(max-width:480px){.snake-headline{gap:8px}.snake-headline h3{font-size:17px}.snake-headline p{max-width:235px}.snake-footer>span{max-width:150px}.snake-arena{padding:6px;border-radius:18px}.snake-canvas{border-radius:13px}}
+@media(prefers-reduced-motion:reduce){.snake-level-pill i{animation:none}.snake-controls>button{transition:none}}
