@@ -1,6 +1,6 @@
 # Arcadia
 
-Arcadia is an original Russian-language arcade portal prototype with a liquid-glass interface, eleven playable mini-games, game-specific currencies, daily quests, player levels, ambient audio, and a cosmetic shop that uses one shared currency.
+Arcadia is an original Russian-language arcade portal prototype with a liquid-glass interface, fifteen playable mini-games, game-specific currencies, daily quests, player levels, ambient audio, and a cosmetic shop that uses one shared currency.
 
 ## Run
 
@@ -30,3 +30,5 @@ Quests can be rerolled for 10 shared stars. Reaction, number guessing, rock-pape
 ## Embedded clicker attribution
 
 The clicker is an embedded, adapted copy of [na1os/clicker-game](https://github.com/na1os/clicker-game). Its original source and README are preserved in `games/na1os-clicker/`; the only gameplay-source adjustment namespaces its localStorage keys to avoid collisions with Arcadia data. The upstream README asks users not to claim the work as their own and says it may be forked and modified. It does not include a standard license file; see `games/na1os-clicker/ATTRIBUTION.md`.
+
+- A theme toggle switches between dark and light glass palettes. New games include Neon Snake, Minesweeper, Echo Sequence, and Bubble Garden, with synthesized sound effects controlled by the site sound switch.

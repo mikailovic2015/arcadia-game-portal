@@ -46,3 +46,47 @@ html[data-theme="nebula"] body{background:radial-gradient(ellipse at 8% 12%,#542
 .answer-btn.selected{border-color:#b99cff;background:rgba(165,132,255,.24);box-shadow:0 0 18px rgba(165,132,255,.15)}.answer-btn:disabled,.claim-btn:disabled{opacity:.45;cursor:not-allowed}
 
 .clicker-modal{width:min(1060px,100%);max-height:90vh;padding:22px;background:linear-gradient(145deg,rgba(22,25,46,.98),rgba(10,13,26,.99))}.clicker-source-note{display:flex;align-items:center;gap:6px;margin:0 42px 12px 0;color:#b5bad1;font-size:10px}.clicker-source-note a{color:#d2c0ff}.clicker-source-note a:hover{text-decoration:underline}.clicker-source-frame{display:block;width:100%;height:min(74vh,760px);min-height:500px;border:1px solid #ffffff18;border-radius:13px;background:#0a0e17}@media(max-width:720px){.clicker-modal{padding:14px 10px}.clicker-source-note{font-size:9px}.clicker-source-frame{height:76vh;min-height:460px;border-radius:10px}}
+
+/* Light glass palette */
+html[data-theme="light"] body{background:radial-gradient(ellipse at 10% 10%,#cddcff88,transparent 38%),radial-gradient(ellipse at 86% 42%,#f4d7ff80,transparent 36%),#f2f5fb;color:#252b3d}
+html[data-theme="light"] .ambient{opacity:.16}
+html[data-theme="light"] .glass,html[data-theme="light"] .glass-inner{background:linear-gradient(145deg,rgba(255,255,255,.88),rgba(246,248,255,.79));border-color:rgba(80,93,129,.14);box-shadow:0 16px 45px rgba(69,82,116,.11),inset 0 1px rgba(255,255,255,.92)}
+html[data-theme="light"] .sidebar{background:rgba(255,255,255,.82)}
+html[data-theme="light"] .brand,html[data-theme="light"] .section-heading h2,html[data-theme="light"] .hero h1,html[data-theme="light"] .stat-card,html[data-theme="light"] .game-title-row h3,html[data-theme="light"] .quest-description b,html[data-theme="light"] .banner-copy h2{color:#252b3d}
+html[data-theme="light"] .side-label,html[data-theme="light"] .breadcrumb,html[data-theme="light"] .hero p,html[data-theme="light"] .game-info p,html[data-theme="light"] .stat-card small,html[data-theme="light"] .stat-note,html[data-theme="light"] .quest-description small,html[data-theme="light"] footer,html[data-theme="light"] .banner-copy p{color:#6e7891}
+html[data-theme="light"] .nav-link{color:#59637b}
+html[data-theme="light"] .nav-link>span{color:#7b83a0}
+html[data-theme="light"] .nav-link:hover,html[data-theme="light"] .nav-link.active{color:#44367a;background:linear-gradient(100deg,#8973dc20,#b9a7f614);border-color:#8f7cdb2b}
+html[data-theme="light"] .game-card,html[data-theme="light"] .quest-row,html[data-theme="light"] .stat-card{border-color:rgba(80,93,129,.13)}
+html[data-theme="light"] .game-card{background:rgba(255,255,255,.72);box-shadow:0 12px 34px rgba(54,69,107,.1)}
+html[data-theme="light"] .collection-item,html[data-theme="light"] .collection-mini{color:#58627b}
+html[data-theme="light"] .collection-icon,html[data-theme="light"] .sidebar-bottom{background:#7685aa12;border-color:#7685aa22}
+html[data-theme="light"] .filter,html[data-theme="light"] .sort-btn,html[data-theme="light"] .subtle-btn,html[data-theme="light"] .text-btn{color:#5b6380}
+html[data-theme="light"] .filter{border-color:#67739720}
+html[data-theme="light"] .filter.active{color:#554390;background:#8972db19;border-color:#8972db44}
+html[data-theme="light"] .icon-btn{color:#575f79;background:#ffffffb8;border-color:#69779826}
+html[data-theme="light"] .balance-pill{color:#4c3c1c;background:linear-gradient(100deg,#ffe8b78c,#e9e3ff9c);border-color:#d2b66b66}
+html[data-theme="light"] .quest-panel{background:rgba(255,255,255,.84)}
+html[data-theme="light"] .shop-banner{background:linear-gradient(120deg,#fff8e8,#f0edff 60%,#eaf9ff);border-color:#ffffff}
+html[data-theme="light"] .modal-backdrop{background:rgba(71,80,112,.34)}
+html[data-theme="light"] .modal:not(.clicker-modal){background:linear-gradient(145deg,rgba(255,255,255,.98),rgba(244,247,255,.98));border-color:#ffffff;box-shadow:0 30px 90px #46527433;color:#252b3d}
+html[data-theme="light"] .modal:not(.clicker-modal) h2,html[data-theme="light"] .modal:not(.clicker-modal) h3,html[data-theme="light"] .modal:not(.clicker-modal) b{color:#252b3d}
+html[data-theme="light"] .modal:not(.clicker-modal) .modal-lead,html[data-theme="light"] .modal:not(.clicker-modal) p{color:#68728b}
+html[data-theme="light"] .modal:not(.clicker-modal) .modal-quest{border-color:#596a921c}
+html[data-theme="light"] .modal:not(.clicker-modal) .store-item{background:#ffffffa8;border-color:#68769a24}
+html[data-theme="light"] .modal:not(.clicker-modal) .modal-close{color:#4d5670;background:#ffffff;border-color:#66749b26}
+html[data-theme="light"] .toast{color:#30364b;background:#fffffff2;border-color:#64739630;box-shadow:0 8px 30px #3443651c}
+html[data-theme="light"] .play-stage{color:#f5f5ff}
+html[data-theme="light"] .play-stage h3{color:#f5f5ff}
+html[data-theme="light"] .play-stage p{color:#aeb7d0}
+html[data-theme="light"] .game-wallet{color:#ffdc8c}
+
+/* Four new arcade games and their feedback animations */
+.snake-canvas{width:min(280px,78vw);height:auto;border:1px solid #7bf3b655;border-radius:13px;box-shadow:0 0 30px #43d99a1a;image-rendering:pixelated}.snake-controls{display:grid;gap:5px;margin:10px 0}.snake-controls>button,.snake-controls>div button{width:42px;height:34px;border:1px solid #ffffff25;border-radius:9px;background:#ffffff10;color:#d7ffe7;font-size:15px}.snake-controls>div{display:flex;gap:5px}.mine-grid{display:grid;grid-template-columns:repeat(8,minmax(27px,36px));gap:4px;justify-content:center;margin:7px auto 12px}.mine-cell{width:clamp(27px,7vw,36px);height:clamp(27px,7vw,36px);padding:0;border:1px solid #ffffff20;border-radius:7px;background:#ffffff11;color:#f4f0ff;font-weight:800;cursor:pointer;transition:transform .12s,background .15s}.mine-cell:not(.open):hover{transform:translateY(-2px);background:#ffffff24}.mine-cell.open{background:#ffffffeb;color:#30364c;border-color:#ffffff}.mine-cell.open[data-number="1"]{color:#3976db}.mine-cell.open[data-number="2"]{color:#35955e}.mine-cell.open[data-number="3"]{color:#dc5d5d}.mine-cell.flagged{background:#e5b45438}.simon-grid{display:grid;grid-template-columns:repeat(2,minmax(90px,120px));gap:9px;margin:7px 0 12px}.simon-pad{height:78px;border:1px solid #ffffff35;border-radius:17px;color:white;font-size:24px;cursor:pointer;transition:transform .14s,filter .14s,box-shadow .14s}.simon-pad small{display:block;font-size:8px;margin-top:3px;opacity:.8}.simon-0{background:linear-gradient(145deg,#596dca,#34458d)}.simon-1{background:linear-gradient(145deg,#41b98e,#21735f)}.simon-2{background:linear-gradient(145deg,#a27de6,#6744a6)}.simon-3{background:linear-gradient(145deg,#edaa67,#b96759)}.simon-pad.lit{transform:scale(1.06);filter:brightness(1.55);box-shadow:0 0 26px currentColor}.bubble-garden{width:min(100%,400px);height:220px;position:relative;overflow:hidden;border:1px solid #9de9f028;border-radius:18px;background:radial-gradient(ellipse at 50% 110%,#58c7d233,transparent 65%),linear-gradient(180deg,#101b3222,#70d8e00c);margin:4px 0 12px}.garden-bubble{position:absolute;left:var(--x);top:var(--y);width:34px;height:34px;padding:0;border:1px solid #c8fbffb0;border-radius:50%;background:radial-gradient(circle at 30% 25%,#ffffffdb,#94e5ed54 38%,#7b8fff39 75%);color:#efffff;font-size:28px;line-height:1;box-shadow:inset -4px -5px 10px #7d8fff35,0 0 12px #a8fbff22;animation:bubble-drift 4s ease-in-out var(--delay) infinite alternate;cursor:pointer;transition:transform .2s,opacity .2s}.garden-bubble:hover{filter:brightness(1.25);transform:scale(1.15)}.garden-bubble.popped{animation:bubble-pop .25s ease-out forwards;pointer-events:none}@keyframes bubble-drift{to{translate:4px -10px}}@keyframes bubble-pop{to{scale:1.8;opacity:0}}
+html[data-theme="light"] .mine-cell:not(.open){background:#ffffffbf;color:#424b66;border-color:#8794b84a}
+html[data-theme="light"] .mine-cell.open{background:#e9edf7;color:#30364c;border-color:#c9d0e0}
+html[data-theme="light"] .bubble-garden{background:radial-gradient(ellipse at 50% 110%,#58c7d233,transparent 65%),linear-gradient(180deg,#dceaff,#f0f8ff);border-color:#8299c34d}
+html[data-theme="light"] .modal .play-stage h3{color:#f5f5ff}
+html[data-theme="light"] .modal .play-stage p{color:#aeb7d0}
+html[data-theme="light"] .profile-edit input{color:#252b3d;background:#ffffff;border-color:#7b88a52e}
+html[data-theme="light"] .profile-edit input::placeholder{color:#8a93aa}
