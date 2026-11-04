@@ -26,3 +26,7 @@ This is a static site with no build step. Create a Vercel project from this GitH
 
 Quests can be rerolled for 10 shared stars. Reaction, number guessing, rock-paper-scissors, coin toss, and 2048 offer optional virtual-star wagers: wins pay back twice the stake, losses forfeit it, and draws return it. Calm-game currencies have daily caps (clouds: 20; rain and garden: 30) to prevent unlimited tap farming.
 - The star clicker has its own persistent tap and level progression plus an in-game upgrade shop. Its dedicated pollen balance is stored separately from shared stars and every other game wallet; clicks do not grant global stars, XP, or quest progress.
+
+## Embedded clicker attribution
+
+The clicker is an embedded, adapted copy of [na1os/clicker-game](https://github.com/na1os/clicker-game). Its original source and README are preserved in `games/na1os-clicker/`; the only gameplay-source adjustment namespaces its localStorage keys to avoid collisions with Arcadia data. The upstream README asks users not to claim the work as their own and says it may be forked and modified. It does not include a standard license file; see `games/na1os-clicker/ATTRIBUTION.md`.
