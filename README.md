@@ -25,3 +25,4 @@ This is a front-end prototype. Accounts, cross-device sync, server-side balances
 This is a static site with no build step. Create a Vercel project from this GitHub repository, select **Other** as the framework preset, leave the build command and output directory empty, then deploy. `index.html` is at the repository root.
 
 Quests can be rerolled for 10 shared stars. Reaction, number guessing, rock-paper-scissors, coin toss, and 2048 offer optional virtual-star wagers: wins pay back twice the stake, losses forfeit it, and draws return it. Calm-game currencies have daily caps (clouds: 20; rain and garden: 30) to prevent unlimited tap farming.
+- The star clicker has its own persistent tap and level progression plus an in-game upgrade shop. Its stars stay in the clicker wallet; clicks do not grant global stars, XP, or quest progress.
