@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#080b16">
+  <meta name="description" content="Arcadia — твоя вселенная мини-игр, достижений и наград.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 64 64%22><rect width=%2264%22 height=%2264%22 rx=%2218%22 fill=%22%238a6df0%22/><text x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22central%22 text-anchor=%22middle%22 font-size=%2245%22 fill=%22white%22>✳</text></svg>">
+  <title>Arcadia — играй в своём ритме</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="ambient ambient-a"></div><div class="ambient ambient-b"></div>
+  <div class="app-shell">
+    <aside class="sidebar glass">
+      <a class="brand" href="#top" aria-label="Arcadia — главная"><span class="brand-mark">✳</span><span>arcadia<span class="brand-dot">.</span></span></a>
+      <div class="side-label">МЕНЮ</div>
+      <nav class="side-nav" aria-label="Основная навигация">
+        <a class="nav-link active" href="#top"><span>⌂</span> Главная</a>
+        <a class="nav-link" href="#games"><span>▦</span> Игры <b class="nav-count">11</b></a>
+        <a class="nav-link" href="#quests"><span>◈</span> Задания <i class="nav-new"></i></a>
+        <button class="nav-link" data-open="shop"><span>✧</span> Магазин</button>
+      </nav>
+      <div class="side-label collection-label">ТВОЯ КОЛЛЕКЦИЯ</div>
+      <div class="collection-mini" id="collectionMini"></div>
+      <div class="sidebar-bottom glass-inner">
+        <div class="online-dot"></div><span>Вселенная онлайн</span><span class="online-count">1 248</span>
+      </div>
+      <button class="profile-mini" id="profileBtn"><span class="avatar">M</span><span class="profile-text"><b id="profileName">Игрок</b><small>Уровень <span id="profileLevel">1</span></small></span><span class="more">···</span></button>
+    </aside>
+
+    <main id="top" class="main-content">
+      <header class="topbar">
+        <div class="breadcrumb">Вселенная <span>/</span> <b>Главная</b></div>
+        <div class="top-actions"><button class="icon-btn" id="soundBtn" aria-label="Звук">♫</button><button class="icon-btn notification-btn" id="noticeBtn" aria-label="Уведомления">♧<i></i></button><button class="balance-pill" data-open="shop"><span class="coin-glyph">✦</span><b id="globalCoins">0</b><span class="balance-plus">+</span></button></div>
+      </header>
+
+      <section class="hero glass">
+        <div class="hero-copy"><div class="eyebrow"><span class="pulse"></span> ТВОЁ МЕСТО ДЛЯ ИГРЫ</div><h1>Играй в своём<br><span>ритме.</span></h1><p>Открывай новые миры, собирай награды и создавай свою игровую историю.</p><div class="hero-actions"><a href="#games" class="primary-btn">Выбрать игру <span>↗</span></a><button class="text-btn" data-open="quests">Посмотреть задания <span>→</span></button></div><div class="hero-social"><div class="avatar-stack"><i>R</i><i>K</i><i>A</i><b>+</b></div><span>1 248 игроков уже здесь</span></div></div>
+        <div class="hero-art" aria-hidden="true"><div class="orbit orbit-1"></div><div class="orbit orbit-2"></div><div class="planet planet-back"></div><div class="planet planet-main"><span>✳</span></div><div class="planet planet-small"></div><div class="spark spark-1">✦</div><div class="spark spark-2">✧</div><div class="float-chip chip-one">✦ <b>+50</b></div><div class="float-chip chip-two">✧ <b>NEW LEVEL</b></div></div>
+        <div class="hero-index">01 <span>— 04</span></div>
+      </section>
+
+      <section class="stats-row" aria-label="Статистика"><article class="stat-card glass-inner"><span class="stat-icon violet">◈</span><div><small>ОБЩИЙ УРОВЕНЬ</small><b id="levelStat">1</b></div><span class="stat-note">Начало пути</span></article><article class="stat-card glass-inner"><span class="stat-icon cyan">♧</span><div><small>ИГРЫ ПРОЙДЕНЫ</small><b id="gamesPlayed">0</b></div><span class="stat-note">Так держать!</span></article><article class="stat-card glass-inner"><span class="stat-icon orange">✦</span><div><small>ТВОИ НАГРАДЫ</small><b id="rewardsStat">0</b></div><span class="stat-note">Есть куда расти</span></article><article class="stat-card glass-inner xp-card"><div class="xp-heading"><small>ОПЫТ ДО УРОВНЯ <b id="nextLevel">2</b></small><span id="xpText">0 / 100 XP</span></div><div class="xp-track"><span id="xpBar"></span></div><small class="muted">Играй и выполняй задания, чтобы расти</small></article></section>
+
+      <section class="section-block" id="games"><div class="section-heading"><div><div class="eyebrow">ТВОЯ АРКАДА</div><h2>Выбирай настроение</h2></div><div class="filter-row"><button class="filter active" data-filter="all">Все игры <span>11</span></button><button class="filter" data-filter="popular">Популярные</button><button class="filter" data-filter="new">Новые <i></i></button><button class="filter" data-filter="relax">Расслабиться</button><button class="sort-btn" id="sortBtn">⌘ <span>Фильтр</span></button></div></div>
+        <div class="games-grid" id="gamesGrid"></div>
+      </section>
+
+      <section class="lower-grid" id="quests"><article class="quest-panel glass"><div class="section-heading compact"><div><div class="eyebrow">НЕБОЛЬШИЕ ШАГИ — БОЛЬШИЕ НАГРАДЫ</div><h2>Задания дня <span class="live-tag">ОБНОВЛЕНО</span></h2></div><div class="answer-row"><button class="subtle-btn" id="refreshQuestList">Обновить · 10 ✦</button><button class="subtle-btn" data-open="quests">Все задания <span>→</span></button></div></div><div id="questList" class="quest-list"></div></article><article class="shop-banner glass"><div class="banner-glow"></div><div class="banner-copy"><div class="eyebrow">ТВОЙ СТИЛЬ — ТВОИ ПРАВИЛА</div><h2>Магазин<br>открыт для тебя</h2><p>Новые темы, аватары и эффекты<br>за общую валюту.</p><button class="primary-btn small" data-open="shop">Заглянуть внутрь <span>↗</span></button></div><div class="banner-object"><div class="halo"></div><div class="cube">✦</div><span>LIMITED<br>DROP</span></div></article></section>
+
+      <footer><span>© 2026 ARCADIA UNIVERSE</span><span>Создано для хороших игровых вечеров <b>✦</b></span><a href="#top">Наверх ↑</a></footer>
+    </main>
+  </div>
+
+  <div class="modal-backdrop" id="modalBackdrop" hidden><section class="modal glass" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><button class="modal-close" id="modalClose" aria-label="Закрыть">×</button><div id="modalContent"></div></section></div>
+  <div class="toast-region" id="toastRegion" aria-live="polite"></div>
+  <script src="vendor/random-spinning-wheel.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
